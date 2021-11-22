@@ -1,6 +1,4 @@
-
-
-.button {
+#grid .button {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: auto auto;
@@ -9,10 +7,10 @@
     padding: 12px 14px;
 }
 
-.button .button__content {
+#grid .button .button__content {
     padding: 0 5px;
 }
-.button .button__icon {
+#grid .button .button__icon {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: auto auto;
@@ -21,14 +19,14 @@
     padding: 0 5px;
 }
 
-nav {
+#grid nav {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 140px 1fr auto;
     align-items: center;
 }
 
-nav .actions {
+#grid nav .actions {
     grid-column: 3 / -1;
     display: grid;
     grid-template-rows: 100%;
@@ -37,14 +35,14 @@ nav .actions {
     gap: 32px;
 }
 
-nav .actions .actions_list {
+#grid nav .actions .actions_list {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: auto auto;
     gap: 34px;
 }
 
-nav .actions .actions_list__item {
+#grid nav .actions .actions_list__item {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 1fr;
@@ -53,14 +51,14 @@ nav .actions .actions_list__item {
 
 
 
-footer { 
+#grid footer { 
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns:  290px 1fr auto auto;
     align-items: center;
     gap: 50px;
 }
-footer .links {
+#grid footer .links {
     grid-column: 3 / 4;
     display: grid;
     grid-template-rows: 100%;
@@ -68,7 +66,7 @@ footer .links {
     align-items: center;
     gap: 30px;
 }
-footer .socials {
+#grid footer .socials {
     grid-column: 4 / -1;
     display: grid;
     grid-template-rows: 100%;
@@ -77,67 +75,67 @@ footer .socials {
     gap: 27px;
 }
 
-section.header {
+#grid section.header {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns:  1fr;
     gap: 30px;
 }
 
-section.content .cards {
+#grid section.content .cards {
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns:  repeat(3, 1fr);
     gap: 16px;
 }
-section.content .cards .card {
+#grid section.content .cards .card {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
 }
-section.content .cards .card .actions {
+#grid section.content .cards .card .actions {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
 }
-section.content .cards .card .content {
+#grid section.content .cards .card .content {
     display: grid;
     grid-template-rows: auto auto 1fr auto ;
     grid-template-columns: 1fr;
 }
 
 @media all and (max-width: 1280px) { 
-    section.header {
+    #grid section.header {
         gap: 16px;
     }
-    footer { 
+    #grid footer { 
         gap: 35px;
     }
-    footer .links {
+    #grid footer .links {
         gap: 20px;
     }
-    footer .socials {
+    #grid footer .socials {
         gap: 27px;
     }
-    section.content .cards {
+    #grid section.content .cards {
         grid-template-columns:  repeat(2, 1fr);
     }
 }
 
 @media all and (max-width: 768px) {
-    footer { 
+    #grid footer { 
         grid-template-rows: 1fr auto ;
         grid-template-columns:  1fr 1fr;
         align-items: start;
     }
-    footer .copyright {
+    #grid footer .copyright {
         grid-row: 2 / -1;
         grid-column: 1 / -1;
         margin: 0 auto;
     }
-    footer .links {
+    #grid footer .links {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
         align-items: start;
@@ -146,17 +144,16 @@ section.content .cards .card .content {
         grid-template-rows: 1fr 1fr;
         grid-template-columns:  1fr;
     }
-    footer .links .link {
+    #grid footer .links .link {
         text-align: left;
     }
-    footer .socials {
+    #grid footer .socials {
         grid-row: 1 / 2;
         grid-column: 2 / -1;
         justify-content: end;
         gap: 27px;
     }
-    section.content .cards {
-        
+    #grid section.content .cards {
         grid-template-columns:  repeat(1, 1fr);
     }
 }

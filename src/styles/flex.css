@@ -1,104 +1,101 @@
-
-
-.button {
+#flexbox .button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.button .button__icon {
+#flexbox .button .button__icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-nav {
+#flexbox nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .actions {
+#flexbox nav .actions {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-nav .actions .actions_list {
+#flexbox nav .actions .actions_list {
     display: flex;
     gap: 34px;
 }
 
-nav .actions .actions_list__item {
+#flexbox nav .actions .actions_list__item {
     display: flex;
     align-items: center;
 }
 
 
 
-footer { 
+#flexbox footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
-footer .links {
+#flexbox footer .links {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-footer .socials {
+#flexbox footer .socials {
     display: flex;
     align-items: center;
     gap: 27px;
 }
 
-section.header {
+#flexbox section.header {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-section.content .cards {
+#flexbox section.content .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
-section.content .cards .card {
+#flexbox section.content .cards .card {
     display: flex;
     flex-direction: column;
     flex-basis: calc(100% / 3 - 11px);
 }
-section.content .cards .card .actions {
+#flexbox section.content .cards .card .actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-section.content .cards .card .content {
+#flexbox section.content .cards .card .content {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
 }
-section.content .cards .card .content .source {
+#flexbox section.content .cards .card .content .source {
     flex-grow: 3;
     display: flex;
     align-items: flex-end;
 }
 
-@media all and (max-width: 1280px) { 
-    section.header {
+@media all and (max-width: 1280px) {
+    #flexbox section.header {
         gap: 16px;
     }
-    footer { 
+    #flexbox footer {
         gap: 35px;
     }
-    footer .links {
+    #flexbox footer .links {
         gap: 20px;
     }
-    footer .socials {
+    #flexbox footer .socials {
         gap: 27px;
     }
-    section.content .cards .card {
+    #flexbox section.content .cards .card {
         display: flex;
         flex-direction: column;
         flex-basis: calc(100% / 2 - 16px);
@@ -106,34 +103,30 @@ section.content .cards .card .content .source {
 }
 
 @media all and (max-width: 768px) {
-    .xs {
+    #flexbox .xs {
         display: flex !important;
     }
-    footer { 
+    #flexbox footer {
         flex-wrap: wrap;
         align-items: flex-start;
     }
-    footer .copyright {
+    #flexbox footer .copyright {
         order: 2;
         margin: 0 auto;
     }
-    footer .links {
+    #flexbox footer .links {
         flex-direction: column;
         align-items: flex-start;
         flex-basis: 45%;
     }
-    footer .socials {
+    #flexbox footer .socials {
         justify-content: flex-end;
         gap: 27px;
         flex-basis: 45%;
     }
-    section.content .cards .card {
+    #flexbox section.content .cards .card {
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
     }
-}
-
-@media all and (max-width: 465px) {
-    
 }
