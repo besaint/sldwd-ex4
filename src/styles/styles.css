@@ -37,10 +37,6 @@ html, body {
     padding: 0;
 }
 
-@media all and (max-width: 1280px) {
-    
-}
-
 @media all and (max-width: 768px) {
     .md {
         display: none !important;
@@ -48,8 +44,4 @@ html, body {
     .xs {
         display: block !important;
     }
-}
-
-@media all and (max-width: 465px) {
-    
 }

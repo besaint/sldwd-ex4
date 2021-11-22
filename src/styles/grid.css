@@ -51,7 +51,7 @@
 
 
 
-#grid footer { 
+#grid footer {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns:  290px 1fr auto auto;
@@ -106,11 +106,11 @@
     grid-template-columns: 1fr;
 }
 
-@media all and (max-width: 1280px) { 
+@media all and (max-width: 1280px) {
     #grid section.header {
         gap: 16px;
     }
-    #grid footer { 
+    #grid footer {
         gap: 35px;
     }
     #grid footer .links {
@@ -125,7 +125,7 @@
 }
 
 @media all and (max-width: 768px) {
-    #grid footer { 
+    #grid footer {
         grid-template-rows: 1fr auto ;
         grid-template-columns:  1fr 1fr;
         align-items: start;

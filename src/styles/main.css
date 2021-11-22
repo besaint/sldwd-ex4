@@ -45,7 +45,6 @@ section.header .breadcrumbs {
 section.header .title {
     width: 370px;
     margin: 0;
-    
     font-family: Roboto Slab, serif;
     font-style: normal;
     font-weight: normal;
@@ -249,8 +248,4 @@ section.content .cards .card .content .source {
         padding-top: 24px;
         padding-bottom: 24px;
     }
-}
-
-@media all and (max-width: 465px) {
-    
 }
